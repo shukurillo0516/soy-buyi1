@@ -1,0 +1,21 @@
+{
+  "message": "hello i18n !!",
+  "navbar": {
+    "incomingInvoices": "Incoming Invoices",
+    "selling": "Selling",
+    "language": "Languages"
+  },
+  "table": {
+    "name_of_the_table": "Table",
+    "code": "Code",
+    "name": "Name of the product",
+    "unit": "Unit",
+    "price": "Price",
+    "balance_beginning": "Balance at the beginning",
+    "arrival": "Arrival",
+    "expenditure": "Expenditure",
+    "balance_end": "Balance at the end",
+    "qty": "qty",
+    "summ": "summ"
+  }
+}
