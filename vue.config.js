@@ -6,5 +6,8 @@ module.exports = {
       localeDir: 'lang',
       enableInSFC: false
     }
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/soy-buyi1/'
+  : '/'
 }
