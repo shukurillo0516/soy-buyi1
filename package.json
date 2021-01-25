@@ -9,14 +9,13 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/lang/**/*.json'",
     "deploy":"gh-pages -d dist"
   },
-  "homepage":"https://shukurillo0516.github.io/soy-buyi1",
+  "homepage":"https://shukurillo0516.github.io/soy-buyi1/",
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
     "firebase": "^8.2.4",
     "gh-pages": "^3.1.0",
-    "homepage":"https://shukurillo0516.github.io/soy-buyi1",
     "vue": "^2.6.11",
     "vue-i18n": "^8.17.3",
     "vue-router": "^3.2.0",

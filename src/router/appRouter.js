@@ -1,6 +1,8 @@
 const AppLayout = () => import('../layouts/AppLayout')
 const WorkflowTablePage = () => import('@/views/workflow/WorkflowTablePage')
 const WorkflowPage = () => import('@/views/workflow/WorkflowPage')
+import beforeEnter from "../utils/index"
+
 
 export default {
   path: '/app',
@@ -12,6 +14,7 @@ export default {
       path: 'workflow',
       name: 'Workflow',
       redirect: '/app/workflow/list',
+      beforeEnter: beforeEnter,
       component: {
         render (c) {
           return c('router-view')

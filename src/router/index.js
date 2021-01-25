@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 // import beforeEnter from "@/utils"
 import appRouter from "./appRouter.js"
 import Login from "@/views/Login.vue"
-import beforeEnter from "@/components/utils"
+import beforeEnter from "../utils/index"
 
 Vue.use(VueRouter)
 
@@ -13,7 +13,7 @@ const routes = [
     path: '/',
     name: 'Home',
     redirect: "app",
-    beforeEnter,
+    beforeEnter: beforeEnter,
     component: {
       render (c) {
         return c('router-view')
