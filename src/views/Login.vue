@@ -1,6 +1,9 @@
 <template>
 <div align="center" class="py-5">
   <p>hello</p>
+  <p>hello</p>
+  <p>hello</p>
+  <p>hello</p>
   <b-card
     align="center"
     header=""
