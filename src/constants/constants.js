@@ -21,5 +21,6 @@ const auth = fb.auth()
 db.settings({ timestampsInSnapshots: true })
 
 const AUTHORIZATION = "Authorization"
+const MAIN_COLLECTION =  'soyBuyi'
 
-export {db, st, auth, AUTHORIZATION}
+export {db, st, auth, AUTHORIZATION, MAIN_COLLECTION}

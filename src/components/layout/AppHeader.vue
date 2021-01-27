@@ -3,19 +3,20 @@
   <b-navbar class="mx-3" type="white" variant="white">
     
     <b-navbar-nav class="nav">
-      
       <b-nav-text>
         SpaceMan
       </b-nav-text>
-      <b-nav-text class="mx-4">
-        Soy Buyi XK    
-      </b-nav-text>
+      <router-link to="/">
+        <b-nav-text class="mx-4">
+          Soy Buyi XK    
+        </b-nav-text>
+      </router-link>
       
-      <router-link :to="{ name: 'WorkflowPage', params: {id: 1}}">
+      <router-link :to="{ name: 'WorkflowPage', params: {id: 0}}">
        <button type="button" class="btn btn-primary incoming-btn">{{ $t("navbar.incomingInvoices") }}</button>
       </router-link>
-      <router-link to="/">
-        <button type="button" class="btn btn-secondary">{{ $t("navbar.incomingInvoices") }}</button>
+      <router-link :to="{ name: 'WorkflowPage', params: {id: 1}}">
+        <button type="button" class="btn btn-primary">{{ $t("navbar.selling") }}</button>
       </router-link>  
     </b-navbar-nav>  
   

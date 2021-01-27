@@ -1,13 +1,14 @@
 const AppLayout = () => import('../layouts/AppLayout')
 const WorkflowTablePage = () => import('@/views/workflow/WorkflowTablePage')
 const WorkflowPage = () => import('@/views/workflow/WorkflowPage')
+const AcceptInvoicePage = () => import('@/views/actionPages/actionsPage')
 import beforeEnter from "../utils/index"
 
 
 export default {
   path: '/app',
   name: 'App',
-  redirect: 'app/workflow',
+  redirect: '/app/workflow',
   component: AppLayout,
   children: [
     {
@@ -30,6 +31,11 @@ export default {
           path: 'invoices/:id',
           name: 'WorkflowPage',
           component: WorkflowPage
+        },
+        {
+          path: 'invoices-actions/:id',
+          name: 'AcceptInvoicePage',
+          component: AcceptInvoicePage
         }
       ]
 

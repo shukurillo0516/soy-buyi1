@@ -51,7 +51,6 @@ export default {
   methods: {
     logIn(evt){
       evt.preventDefault();
-      console.log(111)
       this.$store.dispatch('logIn', {
         email: this.email,
         password: this.password

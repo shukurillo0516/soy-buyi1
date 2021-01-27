@@ -12,7 +12,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    redirect: "app",
+    redirect: "/app",
     beforeEnter: beforeEnter,
     component: {
       render (c) {
